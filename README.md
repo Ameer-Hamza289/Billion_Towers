@@ -1,45 +1,37 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+## Billion Towers - Project Proposal
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+**1. Introduction**
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+Billion Towers is a proposed responsive real estate platform built with ReactJS, aiming to revolutionize the property market by leveraging emerging technologies like AR/VR and Web3.  This document outlines the project's core features, technical approach, and future roadmap.
 
----
+**2. Key Features**
 
-## Edit a file
+* **Property Listing:**  Detailed listings with high-quality images, videos, and 3D models (AR/VR integration).
+* **AR/VR Property Tours:** Users can virtually explore properties using their devices, creating an immersive experience.
+* **Advanced Search Filters:** Customizable filters based on location, price range, size, amenities, and more.
+* **Secure Transactions:** Blockchain integration for secure and transparent transactions, minimizing fraud and delays.
+* **User Profiles:** Secure user accounts with personalized dashboards, saved searches, and transaction history.
+* **Real Estate Agent Portal:** Dedicated portal for agents to manage listings, communications, and client interactions.
+* **Payment Gateway Integration:** Secure and reliable payment processing through established gateways.
+* **Community Forum:** A platform for users and agents to connect, share information, and engage in discussions.
+* **NFT Integration (Optional):**  Potentially allowing users to own and trade digital representations of properties as NFTs.
+* **Property Management Tools (Optional):**  Integration with property management systems for streamlined management.
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+**3. Conclusion**
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+Billion Towers has the potential to redefine the real estate market by offering a seamless, secure, and technologically advanced platform.  By focusing on user experience, security, and innovation, Billion Towers aims to become the leading digital real estate marketplace in the future.  Further detailed planning, including a more specific technical architecture, budgeting, and team structure, is necessary for project commencement.
 
----
+## How to build on your side?
 
-## Create a file
 
-Next, you’ll add a new file to this repository.
+### Install dependencies ( v18.x / v20.x )
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+```
+   npm install
+```
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+### Run on localhost
 
----
-
-## Clone a repository
-
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
-
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
-
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+```
+   npm start
+```
