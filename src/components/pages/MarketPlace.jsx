@@ -20,7 +20,9 @@ import {
 } from 'lucide-react';
 import Header from '../layout/Header';
 import Property from '../ui/Property';
+import EthPriceTrackerCard from '../ui/EthPriceTrackerCard';
 import properties from '../../data/properties';
+import { useEthPrice } from '../../hooks/useEthPrice';
 
 const MarketPlace = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -30,6 +32,8 @@ const MarketPlace = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [priceRange, setPriceRange] = useState([0, 1000]);
   const [filteredProperties, setFilteredProperties] = useState(properties);
+
+  const { price: ethPrice, lastUpdated, up, loading: ethLoading, error: ethError } = useEthPrice();
 
   const categories = [
     { value: 'all', label: 'All Properties', icon: Building2 },
@@ -172,6 +176,16 @@ const MarketPlace = () => {
         transition={{ duration: 0.6 }}
       >
         <div className="container mx-auto max-w-7xl">
+          <div className="mb-6">
+            <EthPriceTrackerCard
+              ethPrice={ethPrice}
+              lastUpdated={lastUpdated}
+              up={up}
+              loading={ethLoading}
+              error={ethError}
+              ethAmount={300}
+            />
+          </div>
           <div className="bg-dark-800/50 backdrop-blur-sm rounded-2xl p-6 border border-dark-600/50">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
               {/* Search */}
