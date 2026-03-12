@@ -226,4 +226,4 @@ export default {
     },
   },
   plugins: [],
-}
+};
